@@ -1,0 +1,33 @@
+-- Tạo ScreenGui
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+
+local ESP = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local FOV = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(40,40,40)
+Frame.Position = UDim2.new(0.1,0,0.3,0)
+Frame.Size = UDim2.new(0,220,0,180)
+
+Title.Parent = Frame
+Title.Text = "Snipe or Die - Syrex hub"
+Title.Size = UDim2.new(1,0,0,30)
+Title.BackgroundColor3 = Color3.fromRGB(30,30,30)
+Title.TextColor3 = Color3.new(1,1,1)
+
+ESP.Parent = Frame
+ESP.Position = UDim2.new(0.1,0,0.25,0)
+ESP.Size = UDim2.new(0.8,0,0.18,0)
+ESP.Text = "ESP: OFF"
+
+Aimbot.Parent = Frame
+Aimbot.Position = UDim2.new(0.1,0,0.48,0)
+Aimbot.Size = UDim2.new(0.8,0,0.18,0)
+Aimbot.Text = "Aimbot: OFF"
+
+FOV.Parent = Frame
